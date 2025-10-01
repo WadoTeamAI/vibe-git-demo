@@ -51,3 +51,37 @@ Let's master version control together! 🎉
 - `git branch` → 実験用の安全空間を作る
 - `Pull Request` → 自分用の振り返りメモとして活用
 
+## 💻 実践例
+
+### 基本的なワークフロー
+
+```bash
+# 1. 状態確認
+git status
+
+# 2. ステージング
+git add [ファイル名]
+
+# 3. commit（AI対話ログとして記録）
+git commit -m "feat: 〇〇機能を追加"
+
+# 4. 履歴確認
+git log --oneline --graph
+```
+
+### ブランチを使った安全な実験
+
+```bash
+# 新しい実験用ブランチを作成
+git switch -c feature/experiment
+
+# 作業・commit後、mainに戻る
+git switch main
+
+# 実験が成功したらmerge
+git merge feature/experiment
+
+# 不要なブランチを削除
+git branch -d feature/experiment
+```
+
