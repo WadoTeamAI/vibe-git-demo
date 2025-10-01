@@ -35,3 +35,19 @@ This is a hands-on project for learning Git and GitHub in the age of AI-driven d
 
 Let's master version control together! 🎉
 
+## 🌟 Introduction
+
+このプロジェクトは、AI時代の開発における「安全基盤」としてのGit/GitHubの重要性を学ぶためのものです。
+
+### なぜGit/GitHubが必要か？
+
+1. **final_final地獄からの解放** - ファイル名でバージョン管理する必要がなくなります
+2. **安心して壊せるセーフティネット** - いつでも前の状態に戻れます
+3. **AIとの対話ログ** - commit = AI提案の採用記録として機能します
+
+### AI駆動開発での活用法
+
+- `git commit` → AIとの対話ログを残す
+- `git branch` → 実験用の安全空間を作る
+- `Pull Request` → 自分用の振り返りメモとして活用
+
