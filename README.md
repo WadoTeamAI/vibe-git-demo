@@ -85,6 +85,42 @@ git merge feature/experiment
 git branch -d feature/experiment
 ```
 
+## 🗄️ データベース接続機能
 
+このプロジェクトには、データベース接続機能が含まれています（`database.js`）。
 
-いまgitの勉強してるよ〜〜
+### 使用例
+
+```javascript
+const DatabaseConnection = require('./database');
+
+// データベース接続設定
+const db = new DatabaseConnection({
+  host: 'localhost',
+  port: 5432,
+  database: 'vibecoding_db',
+  user: 'admin'
+});
+
+// 接続
+await db.connect();
+
+// クエリ実行
+const result = await db.query('SELECT * FROM users');
+
+// 切断
+await db.disconnect();
+```
+
+### 特徴
+
+- ✅ シンプルなAPI設計
+- ✅ 非同期処理対応
+- ✅ 接続状態管理
+- ✅ エラーハンドリング
+
+---
+
+**🎓 Git/GitHub学習中！**
+
+自然言語でGit操作ができる時代 - Vibe Codingスタイルで開発効率UP！
